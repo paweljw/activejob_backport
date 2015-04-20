@@ -426,7 +426,8 @@ module ActionMailer
     include AbstractController::AssetPaths
     include AbstractController::Callbacks
 
-    include ActionView::Layouts
+    include ActionView::Layouts if defined?(ActionView::Layouts)
+    include AbstractController::Layouts if !defined?(ActionView::Layouts)
 
     PROTECTED_IVARS = AbstractController::Rendering::DEFAULT_PROTECTED_INSTANCE_VARIABLES + [:@_action_has_layout]
 
