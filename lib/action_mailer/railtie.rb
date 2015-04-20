@@ -31,7 +31,7 @@ module ActionMailer
 
       ActiveSupport.on_load(:action_mailer) do
         include AbstractController::UrlFor
-        extend ::AbstractController::Railties::RoutesHelpers.with(app.routes, false)
+        extend ::AbstractController::Railties::RoutesHelpers.with(app.routes)
         include app.routes.mounted_helpers
 
         register_interceptors(options.delete(:interceptors))
