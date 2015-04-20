@@ -3,4 +3,6 @@ if !defined?(ActiveJob)
   require 'active_job'
 end
 
+puts "requiring " + File.join( File.expand_path(File.dirname(__FILE__)), 'action_mailer')
 require File.join( File.expand_path(File.dirname(__FILE__)), 'action_mailer')
+
