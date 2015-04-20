@@ -1,6 +1,6 @@
 # Active Job
 
-Active Job backported to Rails 4.0 and 4.1
+Active Job backported to Rails 4.0 and 4.1. This fork also adds support for using the deliver_later feature of ActionMailer.
 
 ```ruby
 gem 'activejob_backport'
