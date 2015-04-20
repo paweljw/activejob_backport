@@ -17,5 +17,5 @@ gem 'qu-rails', github: "bkeepers/qu", branch: "master", require: false
 gem 'qu-redis', require: false
 gem 'delayed_job_active_record', require: false
 gem 'sequel', require: false
-gem 'actionmailer'
+# gem 'actionmailer'
 gem 'sqlite3'
